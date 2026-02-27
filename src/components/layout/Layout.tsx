@@ -12,6 +12,7 @@ const pageTitles: Record<string, string> = {
   '/tags': 'Etiquetas',
   '/users': 'Usuarios',
   '/settings': 'Configuración',
+  '/otros': 'Otros',
 };
 
 export default function Layout() {

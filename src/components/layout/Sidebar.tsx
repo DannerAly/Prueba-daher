@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard, FileText, Image, Users, FolderOpen,
-  Settings, LogOut, ChevronRight, Zap, Tag, MoreHorizontal
+  Settings, LogOut, ChevronRight, Zap, Tag, MoreHorizontal, Briefcase
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import Avatar from '../ui/Avatar';
@@ -22,6 +22,7 @@ const navItems: NavItem[] = [
   { to: '/users', icon: Users, label: 'Usuarios' },
   { to: '/settings', icon: Settings, label: 'Configuración' },
   { to: '/otros', icon: MoreHorizontal, label: 'Otros' },
+  { to: '/negocios', icon: Briefcase, label: 'Negocios' },
 ];
 
 interface SidebarProps {

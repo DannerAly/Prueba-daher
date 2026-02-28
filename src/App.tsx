@@ -11,6 +11,7 @@ import UsersList from './pages/users/UsersList';
 import Categories from './pages/categories/Categories';
 import Settings from './pages/settings/Settings';
 import Otros from './pages/otros/Otros';
+import Negocios from './pages/negocios/Negocios';
 
 function AppRoutes() {
   const { isAuthenticated } = useAuth();
@@ -31,6 +32,7 @@ function AppRoutes() {
         <Route path="/users" element={<UsersList />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/otros" element={<Otros />} />
+        <Route path="/negocios" element={<Negocios />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
